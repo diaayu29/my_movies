@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta name="google-signin-client_id" content="126239099502-72n4pnf9p8iu1ctaoahofucfdrr6qpsa.apps.googleusercontent.com.apps.googleusercontent.com">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/7ed264fb83.js" crossorigin="anonymous"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>My_movies</title>
+</head>
+
+<body>
+    <div class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <a class="navbar-brand" href="#">My movies</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact_me">Contact me</a>
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Type here..." aria-label="Recipient's username" aria-describedby="basic-addon2" id="search-input">
+                    <div class="input-group-append">
+                        <button class="btn btn-dark" type="button" id="search-btn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+
+    <div class="homepage active" id="homepage">
+        <div class="main"></div>
+        <div class="second">
+            <div class="first" id="first"></div>
+            <div class="seconds" id="second"></div>
+        </div>
+    </div>
+
+    <div class="row" id="list_movie"></div>
+
+    <h2 id="Recommended" class="active">Recommended</h2>
+    <div id="recommended" class="active"></div>
+
+    <h2 id="up_coming" class="active">Latest</h2>
+    <div id="upComing" class="active">
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Details</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+                </div>
+                <div class="modal-body" id="modal-body">
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="contact_me">
+        <div class="copyright">
+            <p>Privacy policy</p>
+            <div class="line"></div>
+            <p>&copy2021 <span>All Right Reserved.</span></p>
+        </div>
+        <div class="contact">
+            <p>Contact me</p>
+            <i class="fab fa-linkedin-in"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-whatsapp"></i>
+            <i class="fab fa-github"></i>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./dist/bundle.js"></script>
+    <script src="src/script.js"></script>
+    <script src="src/app.js"></script>
+    <script src="src/loop.js"></script>
+
+</body>
+
+</html>

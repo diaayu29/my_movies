@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.jumbotron {
+    background-color: #0A043C;
+}
+
+
+/* navigasi */
+
+.navbar {
+    background-color: #0A043C;
+}
+
+.navbar .navbar-brand,
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+    color: #CACACA;
+}
+
+.navbar .navbar-brand {
+    font-size: 28px;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.navbar .collapse .navbar-nav .nav-item .nav-link:hover {
+    color: #757575;
+}
+
+
+/* Akhir Navigasi */
+
+#list_movie {
+    transition: all 0.2s;
+    padding: 100px 140px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-card .details {
+    margin-left: 30px;
+}
+
+#list_movie .card:hover {
+    transition: all 0.2s;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.homepage,
+#upComing,
+#recommended,
+#up_coming,
+#Recommended {
+    display: none;
+}
+
+.description {
+    text-align: left;
+}
+
+#up_coming.active,
+#Recommended.active {
+    display: block;
+}
+
+.homepage.active {
+    margin: 140px 30px 0;
+    display: flex;
+}
+
+.homepage .second {
+    display: none;
+}
+
+#up_coming {
+    padding: 0 120px;
+    margin-top: 80px;
+}
+
+#upComing.active {
+    padding: 20px 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#recommended.active {
+    padding: 20px 120px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Recommended {
+    padding: 0 120px;
+    margin-top: -80px;
+}
+
+footer {
+    padding: 15px 25px;
+    background-color: #0A043C;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .copyright {
+    color: #CACACA;
+    display: flex;
+}
+
+footer .copyright span {
+    font-style: italic;
+}
+
+footer .copyright .line {
+    margin: 0 11px;
+    border-right: 1px solid #CACACA;
+    height: 35px;
+}
+
+footer .contact {
+    color: #CACACA;
+}
+
+footer .contact p {
+    margin-left: 18px;
+}
+
+footer .contact .fab {
+    margin-left: 15px;
+    font-size: 20px;
+    color: #007580;
+}
+
+@media (min-width: 992px) {
+    .homepage .main {
+        width: 70%;
+    }
+    .homepage.active {
+        margin: 100px 90px 0;
+        display: flex;
+    }
+    .homepage .second {
+        margin-left: 80px;
+        display: block;
+    }
+    .homepage.active,
+    #recommended,
+    #upComing {
+        cursor: pointer;
+        transition: all 0.2s;
+        opacity: 1;
+    }
+    .homepage.active .card-img-top:hover,
+    #recommended .card-img-top:hover,
+    #upComing .card-img-top:hover {
+        transition: all 0.2s;
+        opacity: 0.8;
+    }
+    footer {
+        padding: 40px 140px 20px;
+    }
+    footer .contact .fab {
+        margin-left: 25px;
+        font-size: 30px;
+        transition: all 0.3s;
+    }
+    footer .contact .fab:hover {
+        text-shadow: 3px 1px 3px black;
+        cursor: pointer;
+        color: #015961;
+        transition: all 0.3s;
+    }
+}
