@@ -4,13 +4,13 @@ const upComing = document.querySelector('#upComing');
 const recommended = document.querySelector('#Recommended');
 const up_coming = document.querySelector('#up_coming');
 const modalBox = document.querySelector('#exampleModal');
-const url = 'http://image.tmdb.org/t/p/w500/';
+const url = 'https://image.tmdb.org/t/p/w500/';
 
 let img = document.querySelector('#card-img-top');
 
 const showDetailSearchMovie = $('#list_movie').on('click', '.card-img-top', function() {
     $.ajax({
-        url: 'http://www.omdbapi.com',
+        url: 'https://www.omdbapi.com',
         type: 'get',
         dataType: 'json',
         data: {

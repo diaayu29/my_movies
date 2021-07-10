@@ -103,7 +103,7 @@ const showFunctionSearch = $('#search-btn').on('click', function() {
 
     $('#list_movie').html('');
     $.ajax({
-        url: 'http://www.omdbapi.com',
+        url: 'https://www.omdbapi.com',
         type: 'get',
         dataType: 'json',
         data: {
